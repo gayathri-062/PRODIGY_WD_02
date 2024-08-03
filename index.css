@@ -1,0 +1,128 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    /* text-align: center; */
+    background-color: rgb(140, 192, 208);
+}
+
+.stopwatch {
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #cecacf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* .text{
+    text-align: center;
+} */
+#timer {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8d1313;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: black;
+}
+
+#lap-times {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lap-times li {
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color: rgb(72, 76, 70);
+}
+.img1{
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+    display: flex;
+    /* background-color: #8d1313; */
+}
+.sidediv{
+    /* background-color: #8d1313; */
+}
+.maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1000px)
+ {
+    .img1{
+        height: 300px;
+        width: 250px;
+    }
+    .stopwatch{
+        width: 250px;
+    }
+    #timer {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:700px)
+ {
+    .img1{
+        height: 200px;
+        width: 150px;
+    }
+    .stopwatch{
+        width: 200px;
+    }
+    #timer {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:480px)
+ {
+    .img1{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 100px;
+    }
+    #timer {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+   
+}
+@media screen and (max-width:320px)
+ {
+    .img1{
+        display: none;
+    
+    }
+  
+
+   
+}
